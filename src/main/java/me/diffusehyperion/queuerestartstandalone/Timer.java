@@ -79,6 +79,7 @@ public class Timer {
                                     .append(" in ").color(ChatColor.RED).bold(false)
                                     .append(duration + " seconds!").color(ChatColor.GOLD).underlined(true).create());
                 }
+                break;
             }
             case STOP: {
                 if (sender instanceof ConsoleCommandSender) {
@@ -103,6 +104,7 @@ public class Timer {
                                     .append(" in ").color(ChatColor.RED).bold(false)
                                     .append(duration + " seconds!").color(ChatColor.GOLD).underlined(true).create());
                 }
+                break;
             }
         }
         Bukkit.spigot().broadcast(
