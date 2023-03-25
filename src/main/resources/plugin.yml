@@ -2,3 +2,12 @@ name: QueueRestartStandalone
 version: '${project.version}'
 main: me.diffusehyperion.queuerestartstandalone.QueueRestartStandalone
 api-version: 1.19
+commands:
+  queuerestart:
+    usage: /queuerestart (duration) (reason)
+    aliases: queuereboot
+  queuestop:
+    usage: /queuestop (duration) (reason)
+    aliases: queueshutdown
+  queuecancel:
+    usage: /queuecancel
