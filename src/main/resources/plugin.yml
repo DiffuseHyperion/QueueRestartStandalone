@@ -2,6 +2,8 @@ name: QueueRestartStandalone
 version: '${project.version}'
 main: me.diffusehyperion.queuerestartstandalone.QueueRestartStandalone
 api-version: 1.19
+softdepend:
+  - DiscordSRV
 commands:
   queuerestart:
     usage: /queuerestart (duration) (reason)

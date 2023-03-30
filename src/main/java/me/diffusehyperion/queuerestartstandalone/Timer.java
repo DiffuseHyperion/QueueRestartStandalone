@@ -129,9 +129,9 @@ public class Timer {
 
                 // handles timer stop
                 if (timer[0].doubleValue() <= 0) {
-                    method.run();
                     bossBar.removeAll();
                     this.cancel();
+                    method.run();
                 }
 
                 // handles last 10 second dings

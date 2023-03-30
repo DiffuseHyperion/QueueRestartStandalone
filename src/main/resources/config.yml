@@ -1,0 +1,25 @@
+pterodactyl:
+  # Pterodactyl is a server hosting platform.
+  # Due to the way how they handle their servers, any server shutdowns which didn't go through them will cause the server to restart.
+  # This fixes the issue by sending an api request to shut down/restart the server.
+  enabled: false
+  # Your server control website. Remember to include https:// or http:// in front!
+  host: https://ptero.example.com
+  # A client API key to interact with the API. Create one in your account settings.
+  apiKey: ptlc_abcdefghi
+  # Your server identifier. It is the first 8 characters of your server ID, found in the settings tab.
+  identifier: abcdefgh
+discord:
+  # Discord is an online chatting app.
+  # You can send a message to a channel when your server is going and is restarting/shutting down.
+  # DiscordSRV is always preferred over webhooks.
+  discordsrv:
+    # DiscordSRV is an open source plugin to link a discord bot to minecraft.
+    # You can send a message through linked bots in DiscordSRV's config.
+    # This requires DiscordSRV to be setup!
+    enabled: false
+    channelID: 0123456789123456789
+  webhook:
+    # Webhooks are part of discord's api, allowing you to send messages through them.
+    enabled: false
+    webhookUrl: https://discord.com/api/webhooks/12345678/abcdefgh
