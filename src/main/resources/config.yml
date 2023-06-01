@@ -1,5 +1,4 @@
 pterodactyl:
-  # Pterodactyl is a server hosting platform.
   # Due to the way how they handle their servers, any server shutdowns which didn't go through them will cause the server to restart.
   # This fixes the issue by sending an api request to shut down/restart the server.
   enabled: false
@@ -10,7 +9,6 @@ pterodactyl:
   # Your server identifier. It is the first 8 characters of your server ID, found in the settings tab.
   identifier: abcdefgh
 discord:
-  # Discord is an online chatting app.
   # You can send a message to a channel when your server is going and is restarting/shutting down.
   # DiscordSRV is always preferred over webhooks.
   discordsrv:
